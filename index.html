@@ -2,84 +2,173 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hello, Beaches</title>
+    <title>Portfolio - Carol V. </title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+        @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css');
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato&display=swap');
 
       #pic1 {
         width: 100%;
       }
       h1 {
         color: #1E2F97;
-        font-family: 'Square Peg', cursive;
+        font-family: 'Lato', sans-serif;
         font-size: 65px;
         font-weight: bolder;
         text-align:center;
+        padding: 20px;
       }
-      #para1 {
+
+      .paragraph-1 {
         color:#07331f;
-        text-align: center;
+        text-align: justify;
         font-size: 35px;
-        font-family: 'Square Peg', cursive;
-        padding: 20px 50px;
+        font-family: 'Lato', sans-serif;
+        padding: 20px 50px 50px;
       }
-      #para2 {
-        color:#07331f;
-        text-align: center;
-        font-size: 35px;
-        font-family: 'Square Peg', cursive;
-        padding:0px 50px;
-        o
-      }
-      #video-container {
-        text-align: center;
-      }
+    
+    
       #banner {
-        height: 400px;
-        background-image: url(beaches-background.png);
+        height: 640px;
+        background-image: url(pexels-photo-434337.webp);
         background-size: cover;
+        padding: 160px 200px 100px;
+  
       }
-      #banner p {
+
+      #banner-text {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 80px;
+      
+
+      }
+
+      #banner h1 {
         text-align: center;
-        line-height: 400px;
-        color: #fff;
-        font-size: 100px;
-        font-family: 'Square Peg', cursive;
+        color: #000;
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+      }
+
+      #banner h2 {
+        text-align: center;
+        color: #000;
+        font-family: 'Lato', sans-serif;
         margin: 0;
       }
 
       #form-container {
         text-align: center;
+        margin-top: 20px;
       }
 
       body {
         margin: 0;
       }
 
+      #container1 div {
+        display: inline-block;
+        width: 33%;
+      }
+
+      .youtube {
+        width: 100%;
+        height: 250px;
+      }
+
+      body {
+        padding: 100px;
+        padding-top: 0px;
+      }
+
+      .container-video-columns {
+        text-align: center;
+        font-size:x-large;
+        font-weight: 600;
+        color: #1E2F97;
+        height: cover;
+      }
       
+      .container-blog-columns {
+        text-align: center;
+        font-size: large;
+        font-weight: 600;
+        color: #1E2F97;
+        padding: 0px 50px 50px;
+      }
+
+      #title-text {
+        text-align: center;
+        font-size: x-large;
+        font-weight: 600;
+        color: #1E2F97;
+        padding: 50px;
+      }
+
     </style>
   </head>
   <body>
     <div id="banner">
-        <p>
-            Hello, Beaches
-        </p>
+      <div id="banner-text">
+        <h1>Carol V.
+        </h1>
+        <h2>Digital Marketing | Cryptocurrency | FinTech</h2>
+      </div>
     </div>
     <h1>
-        Step away from chaos
+        Portfolio of Past Works
       </h1>
-    <p id="para1">
-      <span id="text1">Crash of waves, salt of the sea.</span>
+    <p class="paragraph-1">
+      <span id="text1">Throughout my career, I have worked across different channels and created content in various mediums. </span>
+      <br>
+      <span>Here are some items that are available for viewing in public domain:</span> 
+      <br>
+      <!-- <span id="text2">Here are some tunes, to sip with tea.</span> 2nd line of text -->
     </p>
-    <p id="para2">
-        <span id="text2">Here are some tunes, to sip with tea.</span>
-      </p>
-    <div id="video-container">
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+    <div class="container-video-columns">
+      <div class="row">
+        <div class="col-md-4" id="col1">
+          <p>Workflow Video</p>
+          <iframe class="youtube" src="https://www.youtube.com/embed/UxFCgjJFwII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4" id="col2">
+          <p> Product Explainer Video</p> 
+          <iframe class="youtube" src="https://www.youtube.com/embed/MT5NQUMou7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4" id="col3">
+          <p> SME Feature Video</p> 
+          <iframe class="youtube" src="https://www.youtube.com/embed/RjK5m79DnqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-blog-columns">
+      <div class="row">
+        <div class="col-md-4" id="col1">
+          <p id="title-text"> Business Opinion Piece</p>
+          <br>
+          <p><a href="https://blog.fundingsocieties.com/2020/12/02/weathering-the-covid-19-storm-with-fintech/">Weathering the CoVid-19 Storm with FinTech</a></p>
+          <br>
+          <p><a href="https://blog.fundingsocieties.com/2020/10/09/how-smes-can-survive-and-thrive-in-the-new-normal/">How SMEs can Survive and Thrive in the New Normal</a></p>
+        </div>
+        <div class="col-md-4" id="col2">
+          <p id="title-text"> Product Feature</p>
+          <br>
+          <p><a href="https://www.omise.co/how-paynow-benefits-your-business">Why PayNow Matters</a></p>
+        </div>
+        <div class="col-md-4" id="col2">
+          <p id="title-text">Product Introduction</p>
+          <br>
+          <p><a href="https://blog.fundingsocieties.com/2021/02/09/understanding-supply-chain-financing-for-smes-in-singapore/">Understanding Supply Chain Financing for SMEs in Singapore</a></p>
+        </div>
+      </div>
     </div>
 
     <div id="form-container">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiSL6_3MGegyvq5nOWsbMUXMT8NV1Jbfae5w6R5U1jcq-c6A/viewform?embedded=true" width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
