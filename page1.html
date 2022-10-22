@@ -12,6 +12,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="Q-Cat-Logo.png">
     <title>Save a Cat!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -39,8 +40,9 @@
         margin-top: 20px;
         padding: 20px;
         background-color: rgb(186, 186, 202);
-        font-weight: bolder;
+        font-weight: bold;
         color: white;  
+        text-align: left;
       }
 
       #footer-container img{
@@ -189,21 +191,21 @@
 
     <div id="footer-container" class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-2">
           <img src="Q-Cat-Logo.png">
         </div>
-        <div class="col-md-3">
-          Test 2
-          <p>Hello2</p>
+        <div class="col-md-5">
+          Rest assured!
+          <p>No cats were harmed in the process of creating this fun page</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-5">
           Test 3
           <p>Hello3</p>
         </div>
       </div>
     </div>
     <script>
-      let seconds = 3;
+      let seconds = 5;
       const timer = setInterval(() => {
         seconds = seconds - 1;
         if (seconds <= 0) {
