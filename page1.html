@@ -59,6 +59,10 @@
         font-size: 2em;
       }
 
+      .btn {
+        background-color: rgb(24, 89, 239);
+      }
+
 
 
     </style>
@@ -199,13 +203,23 @@
           <p>No cats were harmed in the process of creating this fun page</p>
         </div>
         <div class="col-md-5">
-          Test 3
-          <p>Hello3</p>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Want to receive kitten alerts?</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We might share your email address, no promises</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out, I agree to every pur-sibility</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
     </div>
     <script>
-      let seconds = 5;
+      let seconds = 60;
       const timer = setInterval(() => {
         seconds = seconds - 1;
         if (seconds <= 0) {
@@ -217,6 +231,10 @@
         }
 
       }, 1000)
+      document.querySelector('.card .btn').addEventListener('click', () => {
+        alert('YOU HAVE SAVED A KITTEN, FEEL GOOD ABOUT YOURSELF')
+        clearInterval(timer)
+      })
     </script>
 
 
